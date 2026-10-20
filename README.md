@@ -8,7 +8,7 @@ Identities are token ids of an ERC-721 identity registry, such as the Identity R
 
 **Status: draft, not submitted.** The text is in [`ERCS/erc-8450.md`](ERCS/erc-8450.md). ERC-8450 is the next number
 that was free on 2026-10-20; the ERC editors confirm it, or assign another, when the pull request is opened on
-ethereum/ERCs. Discussion opens on Ethereum Magicians first.
+ethereum/ERCs. Discussion: [Ethereum Magicians](https://ethereum-magicians.org/t/erc-8450-agent-credit-lines/30023).
 
 ## Why
 
