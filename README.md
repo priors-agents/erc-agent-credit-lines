@@ -1,4 +1,4 @@
-# Agent Credit Lines (draft ERC)
+# ERC-8450: Agent Credit Lines (draft)
 
 One interface for revolving credit to agent identities: how much an identity can borrow now, what it would cost, draw
 it, how much closes it, repay it, mark it defaulted. Three events (`Borrowed`, `Repaid`, `Defaulted`) record every loan,
@@ -6,9 +6,9 @@ so a wallet, a payment client or a credit reader works with any conforming lende
 
 Identities are token ids of an ERC-721 identity registry, such as the Identity Registry of ERC-8004 (Trustless Agents).
 
-**Status: draft, not submitted.** The text is in [`ERCS/erc-draft_agent_credit_lines.md`](ERCS/erc-draft_agent_credit_lines.md).
-Its `eip: 99901` is a placeholder: the ERC editors assign the real number when the pull request is opened on
-ethereum/ERCs. Discussion will open on Ethereum Magicians first.
+**Status: draft, not submitted.** The text is in [`ERCS/erc-8450.md`](ERCS/erc-8450.md). ERC-8450 is the next number
+that was free on 2026-10-20; the ERC editors confirm it, or assign another, when the pull request is opened on
+ethereum/ERCs. Discussion opens on Ethereum Magicians first.
 
 ## Why
 
@@ -20,7 +20,7 @@ client integrates every lender separately. The calls are the same everywhere; th
 
 | Path | What |
 |---|---|
-| `ERCS/erc-draft_agent_credit_lines.md` | The ERC text, in the ethereum/ERCs template |
+| `ERCS/erc-8450.md` | The ERC text, in the ethereum/ERCs template |
 | `src/IAgentCreditLine.sol` | The interface |
 | `src/SimpleCreditLine.sol` | A minimal reference lender (not audited; not for real money) |
 | `test/SimpleCreditLine.t.sol` | Foundry tests of the reference lender against the specification |
@@ -39,11 +39,10 @@ CI runs all three on every push (`.github/workflows/ci.yml`).
 
 ## Related drafts
 
-- Agent Repay-First Payees: an agent's revenue address that pays its creditors first (to be published as
-  github.com/priors-agents/erc-repay-first-payees).
-- Agent Default Registry: lender-reported defaults any contract can check (to be published as
-  github.com/priors-agents/erc-agent-default-registry).
-- Credit history for ERC-8004 agents: a profile of the ERC-8004 Reputation Registry for loan outcomes
+- ERC-8451 Agent Repay-First Payees: an agent's revenue address that pays its creditors first
+  (github.com/priors-agents/ERC-8451).
+- ERC-8452 Agent Default Registry: lender-reported defaults any contract can check (github.com/priors-agents/ERC-8452).
+- ERC-8449 Credit history for ERC-8004 agents: a profile of the ERC-8004 Reputation Registry for loan outcomes
   (`docs/ERC-8004-CREDIT.md` in github.com/priors-agents/priors). This interface's three events are exactly the
   sources that profile reads.
 
