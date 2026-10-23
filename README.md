@@ -6,9 +6,9 @@ so a wallet, a payment client or a credit reader works with any conforming lende
 
 Identities are token ids of an ERC-721 identity registry, such as the Identity Registry of ERC-8004 (Trustless Agents).
 
-**Status: draft, not submitted.** The text is in
-[`ERCS/erc-draft_agent_credit_lines.md`](ERCS/erc-draft_agent_credit_lines.md). Its `eip: 99901` is a placeholder: the
-ERC editors assign the real number when the pull request is opened on ethereum/ERCs. Discussion: [Ethereum
+**Status: draft, submitted as [ethereum/ERCs#2104](https://github.com/ethereum/ERCs/pull/2104).** The text is in
+[`ERCS/erc-draft_agent_credit_lines.md`](ERCS/erc-draft_agent_credit_lines.md). Its `eip: 99901` is a placeholder until
+the ERC editors assign a number. Discussion: [Ethereum
 Magicians](https://ethereum-magicians.org/t/erc-tba-agent-credit-lines/30023).
 
 ## Why
